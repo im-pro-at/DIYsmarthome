@@ -2,4 +2,4 @@
 Cheap DIY smart home system
 
 
-![alt text](/images/system_overview.jpg)
+![System overview](/images/system_overview.jpg)
