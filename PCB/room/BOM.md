@@ -3,6 +3,7 @@
 | :-: | :------------------------------------------------------- | ---------------- | -------------- | --------: | ----: |
 | 2   | PCB         | [JLCPCB](https://jlcpcb.com/quote) | JLCPCB | 2.50    | 5.00 |
 | 1   | ESP32 + PSRAM       | [ESP32-WROVER](https://octopart.com/search?q=ESP32-WROVER) | Lcsc, Digi-Key | 3.97    | 3.97 |
+| 1 | 12MHz OX SMD-2520_4P | X1G004171001800 or SG-210STF 12.0000ML3 |  |  |  |
 | 3   | Optocopler         | [SFH6206-3T](https://octopart.com/search?q=SFH6206-3T) | Lcsc, Digi-Key | 0.29     | 0.89 |
 | 3   | Solid State Relay  | [G3MC-202P DC5](https://octopart.com/search?q=G3MC-202P%20DC5) | Digi-Key | 6.79	   | 20.37 |
 | 1   | temperatur, humidity and pressure         | [BME280](https://octopart.com/search?q=BME280) | Lcsc, Digi-Key | 2.97  | 2.97 |
@@ -18,10 +19,10 @@
 | 1   | Camera connector | [FH34SRJ-24S-0.5SH(50)](https://octopart.com/search?q=FH34SRJ-24S-0.5SH(50)) | Lcsc | 0.25 | 0.25 |
 | 1 | SPI to UART | [MAX14830](https://octopart.com/search?q=MAX14830) | Digi-Key | 11.39 | 11.39 |
 | 3   | RS485         | [SN65HVD11DR](https://octopart.com/search?q=SN65HVD11DR) | Lcsc, Digi-Key | 0.53     | 1.59 |
+| 3 | E | CDSOT23-0502B |  |  |  |
 | 1   | supply 1A        | [LMR16010](https://octopart.com/search?q=LMR16010) | Lcsc, Digi-Key | 1.02     | 1.02 |
 | 1   | supply 2A        | [LMR16020](https://octopart.com/search?q=LMR16020) | Lcsc, Digi-Key | 1.01     | 1.01 |
-| 1 | LDO 1.8V 300mA | [NCP551SN18T1G](https://lcsc.com/product-detail/Others_ON-Semicon_NCP551SN18T1G_ON-Semicon-ON-NCP551SN18T1G_C274600.html) |  |  |  |
-| 1 | LDO 2.5V  150mA | [NCP551SN25T1G](https://lcsc.com/product-detail/Low-Dropout-Regulators-LDO_ON-Semicon_NCP551SN25T1G_ON-Semicon-ON-NCP551SN25T1G_C233199.html) |  |  |  |
+| 2 | LDO 400 mA Adjustable Output | [RT9043GB](https://lcsc.com/product-detail/Low-Dropout-Regulators-LDO_RT9043GB_C55019.html) |  |  |  |
 | 2  | interboard connector   | [95278-101A14LF](https://octopart.com/search?q=95278-101A14LF) | Lcsc, Digi-Key | 0.81     | 1.62 |
 | 2  | interboard connector   | [XG4H-1431](https://octopart.com/search?q=XG4H-1431) | Lcsc, Digi-Key | 0.44     | 0.88 |
 | 1   | address dipswitch         | [DHN-08F-T-V-T/R](https://octopart.com/search?q=DHN-08F-T-V-T/R) | Lcsc | 0.87   | 0.87 |
@@ -31,14 +32,17 @@
 | 2   | terminal         | [WJ142R-5.08-3P](https://octopart.com/search?q=WJ142R-5.08-3P) | Lcsc | 0.18     | 0.36 |
 | 2 | Res 68k 1206 |  |  |  |  |
 | 3 | Res 12k 1206 |  |  |  |  |
-| 2 | Res 33k 1206 |  |  |  |  |
-| 1 | Res 100k 1206 | | | | |
+| 3 | Res 33k 1206 |  |  |  |  |
+| 3 | Res 100k 1206 | | | | |
+| 4 | res 4.7k 1206 | | | | |
 | 0 | Res 1k 1206 | | | | |
 | 2 | Res 100R 1206 | | | | |
+| 1 | 220pF 50V 0805 | [CL21B221KBANNNC](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B221KBANNNC_220pF-221-10-50V_C53172.html) | | | |
 |  1   | 1uF 16V X7R 0805                  | [CL21B105KOFNNNE](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html) |                |               |           |
-|  2   | 22uF 16V X7R 1210                 | C3225X7R1C226KT000N                                          |  |  |  |
+|  4  | 22uF 16V X7R 1210                 | C3225X7R1C226KT000N                                          |  |  |  |
 | 2 | 47uF 10V X5R 1210 | CL32A476MPJNNNE | | | |
-|  2  | 100nF 50V X7R 1206                | [CL31B104KBCNNNC](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL31B104KBCNNNC_100nF-104-10-50V_C24497.html) | | | |
+| 4 | 4,7uF 10V 0805 | [CL21F475ZPFNNNE](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21F475ZPFNNNE_4-7uF-475-80-20-10V_C50696.html) | | | |
+|  2  | 100nF 50V X7R 0805            | [CL21B104KBCNNNC](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B104KBCNNNC_100nF-104-10-50V_C1711.html) | | | |
 | 2 | 2.2uF 50V X7R 1206 | [CL31B225KBHNNNE](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL31B225KBHNNNE_2-2uF-225-10-50V_C50254.html) | | | |
 | 2 | 2.2uF 16V 1206 | [CC1206KKX7R7BB225](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_2-2uF-225-10-16V_C107183.html) | | | |
 | 1 | Schottky 60V 2A SMB | [B260-13-F](https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_DIODES_B260-13-F_B260-13-F_C72265.html) |  |  |  |
