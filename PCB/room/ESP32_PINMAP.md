@@ -4,7 +4,7 @@
 | 35         | 1    | OUTPUT AT BOOT | U0TX           |        |          | DACDAT |      |
 | 24         | 2    | LOW BOOT       |                | SIOC   |          |        |      |
 | 34         | 3    | OUTPUT AT BOOT | U0RX           |        |          | BCLK   |      |
-| 26         | 4    |                |                |        |          | RRAME  |      |
+| 26         | 4    |                |                |        |          | FRAME  |      |
 | 29         | 5    | OUTPUT AT BOOT |                |        | CS       |        |      |
 | 20         | 6    | FLSCH          | SCK            |        |          |        |      |
 | 21         | 7    | FLSCH          | SDO            |        |          |        |      |

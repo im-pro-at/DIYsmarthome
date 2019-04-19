@@ -377,14 +377,14 @@ DIN A4, landscape with location and doc. field</description>
 <smd name="P$13" x="-0.25" y="0" dx="0.3" dy="0.8" layer="1"/>
 <smd name="NC1" x="-6.75" y="-2.5" dx="0.4" dy="0.8" layer="1"/>
 <smd name="NC2" x="6.75" y="-2.5" dx="0.4" dy="0.8" layer="1"/>
-<wire x1="-7" y1="-2" x2="-7" y2="-0.5" width="0.127" layer="20"/>
-<wire x1="-7" y1="-0.5" x2="-6.5" y2="-0.5" width="0.127" layer="20"/>
-<wire x1="-6.5" y1="-0.5" x2="-6.5" y2="0.5" width="0.127" layer="20"/>
-<wire x1="-6.5" y1="0.5" x2="6.5" y2="0.5" width="0.127" layer="20"/>
-<wire x1="6.5" y1="0.5" x2="6.5" y2="-0.5" width="0.127" layer="20"/>
-<wire x1="6.5" y1="-0.5" x2="7" y2="-0.5" width="0.127" layer="20"/>
-<wire x1="7" y1="-0.5" x2="7" y2="-2" width="0.127" layer="20"/>
-<wire x1="-6.5" y1="-3" x2="6.5" y2="-3" width="0.127" layer="20"/>
+<wire x1="-7" y1="-2" x2="-7" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="-0.5" x2="-6.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-0.5" x2="-6.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="0.5" x2="6.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="0.5" x2="6.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-0.5" x2="7" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="7" y1="-0.5" x2="7" y2="-2" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-3" x2="6.5" y2="-3" width="0.127" layer="21"/>
 <text x="0.2134" y="-2.2614" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="5.715" y="-1.905" size="1.27" layer="21">1</text>
 <text x="-6.35" y="-1.905" size="1.27" layer="21">24</text>
@@ -392,10 +392,10 @@ DIN A4, landscape with location and doc. field</description>
 <package name="MIC">
 <smd name="+" x="0" y="0" dx="0.9" dy="0.9" layer="1" roundness="100" rot="R90"/>
 <circle x="0" y="0" radius="1.125" width="0.45" layer="1"/>
-<smd name="-" x="-1.11251875" y="0.010159375" dx="0.4" dy="0.4" layer="1"/>
+<smd name="-" x="-1.11251875" y="0.010159375" dx="0.4" dy="0.4" layer="1" stop="no" thermals="no" cream="no"/>
 <circle x="0" y="0" radius="1.125" width="0.6" layer="29"/>
 <circle x="0" y="0" radius="1.125" width="0.45" layer="31"/>
-<circle x="0" y="0" radius="1.6" width="0.1" layer="20"/>
+<circle x="0" y="0" radius="1.6" width="0.1" layer="21"/>
 <text x="-2.9616" y="2.1836" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.635" y="-3.73" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -776,6 +776,7 @@ Last modified: 8/20/10&lt;br&gt;
 <smd name="1" x="-2.05" y="1.25" dx="0.3" dy="0.9" layer="1" rot="R90"/>
 <smd name="18" x="1.95" y="1.25" dx="0.3" dy="0.9" layer="1" rot="R90"/>
 <smd name="EP" x="0" y="0" dx="2.1" dy="2.1" layer="1"/>
+<text x="-2.54" y="3.175" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -786,16 +787,16 @@ Last modified: 8/20/10&lt;br&gt;
 <wire x1="-12.7" y1="-25.4" x2="-12.7" y2="30.48" width="0.254" layer="94"/>
 <text x="-12.7309" y="30.5539" size="1.782309375" layer="95">&gt;NAME</text>
 <text x="-12.736" y="-28.0302" size="1.78303125" layer="96">&gt;VALUE</text>
-<pin name="SPKVDD" x="-15.24" y="20.32" length="short" direction="sup"/>
-<pin name="AGND" x="-15.24" y="12.7" length="short" direction="sup"/>
-<pin name="AVDD" x="-15.24" y="27.94" length="short" direction="sup"/>
+<pin name="SPKVDD" x="-15.24" y="20.32" length="short" direction="pwr"/>
+<pin name="AGND" x="-15.24" y="12.7" length="short" direction="pwr"/>
+<pin name="AVDD" x="-15.24" y="27.94" length="short" direction="pwr"/>
 <pin name="MICBIAS" x="15.24" y="15.24" length="short" direction="out" rot="R180"/>
 <pin name="MICN" x="15.24" y="2.54" length="short" direction="in" rot="R180"/>
 <pin name="MICP" x="15.24" y="7.62" length="short" direction="in" rot="R180"/>
 <pin name="AUX" x="15.24" y="25.4" length="short" direction="in" rot="R180"/>
 <pin name="VMID" x="-15.24" y="17.78" length="short"/>
-<pin name="DCVDD" x="-15.24" y="25.4" length="short" direction="sup"/>
-<pin name="DGND" x="-15.24" y="10.16" length="short" direction="sup"/>
+<pin name="DCVDD" x="-15.24" y="25.4" length="short" direction="pwr"/>
+<pin name="DGND" x="-15.24" y="10.16" length="short" direction="pwr"/>
 <pin name="ADCDAT" x="-15.24" y="-5.08" length="short" direction="out"/>
 <pin name="DACDAT" x="-15.24" y="-7.62" length="short" direction="in"/>
 <pin name="FRAME" x="-15.24" y="-2.54" length="short"/>
@@ -805,9 +806,9 @@ Last modified: 8/20/10&lt;br&gt;
 <pin name="MODE" x="-15.24" y="-22.86" length="short" direction="in"/>
 <pin name="MONOOUT" x="15.24" y="-22.86" length="short" direction="out" rot="R180"/>
 <pin name="SPKOUTP" x="15.24" y="-10.16" length="short" direction="out" rot="R180"/>
-<pin name="SPKGND" x="-15.24" y="7.62" length="short" direction="sup"/>
+<pin name="SPKGND" x="-15.24" y="7.62" length="short" direction="pwr"/>
 <pin name="SPKOUTN" x="15.24" y="-15.24" length="short" direction="out" rot="R180"/>
-<pin name="DBVDD" x="-15.24" y="22.86" length="short" direction="sup"/>
+<pin name="DBVDD" x="-15.24" y="22.86" length="short" direction="pwr"/>
 <pin name="CSB/GPIO" x="-15.24" y="-15.24" length="short"/>
 <pin name="BCLK" x="-15.24" y="-10.16" length="short"/>
 </symbol>
@@ -7898,9 +7899,9 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <part name="FRAME2" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="FRAME3" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="A1" library="ESP32-WROVER-I_snapEDA" deviceset="ESP32-WROVER-I" device=""/>
-<part name="U$3" library="parts" deviceset="OV2640-HDF3M-811" device="FRONTLOOKING"/>
-<part name="U$4" library="WM8974_snapEDA" deviceset="WM8974" device=""/>
-<part name="U$5" library="speaker_snapEDA" deviceset="SMS-208MS-R" device=""/>
+<part name="CON3" library="parts" deviceset="OV2640-HDF3M-811" device="FRONTLOOKING"/>
+<part name="U14" library="WM8974_snapEDA" deviceset="WM8974" device=""/>
+<part name="SPR1" library="speaker_snapEDA" deviceset="SMS-208MS-R" device=""/>
 <part name="U$6" library="parts" deviceset="B4013AM423-008" device=""/>
 <part name="FRAME4" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="U1" library="BH1750FVI-TR_snapEDA" deviceset="BH1750FVI-TR" device=""/>
@@ -7949,11 +7950,11 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="2u2 16V"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C1206" value="2u2 16V"/>
-<part name="U$1" library="95278-101A14LF_snapEDA" deviceset="95278-101A14LF" device=""/>
-<part name="U$2" library="95278-101A14LF_snapEDA" deviceset="95278-101A14LF" device=""/>
-<part name="U$8" library="parts" deviceset="DHN-08F-T-V-T/R]" device=""/>
-<part name="U$17" library="NCP551SN_snapEDA" deviceset="RT9043GB" device=""/>
-<part name="U$18" library="NCP551SN_snapEDA" deviceset="RT9043GB" device=""/>
+<part name="CON1" library="95278-101A14LF_snapEDA" deviceset="95278-101A14LF" device=""/>
+<part name="CON2" library="95278-101A14LF_snapEDA" deviceset="95278-101A14LF" device=""/>
+<part name="S8" library="parts" deviceset="DHN-08F-T-V-T/R]" device=""/>
+<part name="U17" library="NCP551SN_snapEDA" deviceset="RT9043GB" device=""/>
+<part name="U18" library="NCP551SN_snapEDA" deviceset="RT9043GB" device=""/>
 <part name="U$12" library="supply1" deviceset="+1V2" device=""/>
 <part name="U$14" library="supply1" deviceset="+2V8" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
@@ -8076,12 +8077,26 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <part name="C31" library="rcl" deviceset="C-EU" device="C0805" value="4u7 16V"/>
 <part name="GND49" library="supply1" deviceset="GND" device=""/>
 <part name="+3V35" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V36" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND50" library="supply1" deviceset="GND" device=""/>
+<part name="C32" library="rcl" deviceset="C-EU" device="C0805" value="100nF 50V"/>
+<part name="C33" library="rcl" deviceset="C-EU" device="C0805" value="100nF 50V"/>
+<part name="C34" library="rcl" deviceset="C-EU" device="C0805" value="100nF 50V"/>
+<part name="GND51" library="supply1" deviceset="GND" device=""/>
+<part name="GND52" library="supply1" deviceset="GND" device=""/>
+<part name="GND53" library="supply1" deviceset="GND" device=""/>
+<part name="+3V37" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V38" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V39" library="supply1" deviceset="+3V3" device=""/>
+<part name="C35" library="rcl" deviceset="C-EU" device="C0805" value="100nF 50V"/>
+<part name="GND54" library="supply1" deviceset="GND" device=""/>
+<part name="+3V40" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="68.58" y="147.32" size="5.08" layer="97">SUPPLY</text>
-<text x="180.34" y="147.32" size="5.08" layer="97">CONNECTOR</text>
+<text x="180.34" y="147.32" size="5.08" layer="97">CONNECTORS</text>
 <text x="33.02" y="63.5" size="5.08" layer="97">ADDRESS</text>
 <text x="106.68" y="58.42" size="5.08" layer="97">OSCILLATOR</text>
 </plain>
@@ -8095,11 +8110,11 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <instance part="GND14" gate="1" x="154.94" y="101.6"/>
 <instance part="C11" gate="G$1" x="73.66" y="114.3"/>
 <instance part="C12" gate="G$1" x="154.94" y="114.3"/>
-<instance part="U$1" gate="G$1" x="203.2" y="127"/>
-<instance part="U$2" gate="G$1" x="203.2" y="73.66"/>
-<instance part="U$8" gate="G$1" x="48.26" y="40.64"/>
-<instance part="U$17" gate="G$1" x="53.34" y="109.22"/>
-<instance part="U$18" gate="G$1" x="119.38" y="109.22"/>
+<instance part="CON1" gate="G$1" x="203.2" y="127"/>
+<instance part="CON2" gate="G$1" x="203.2" y="73.66"/>
+<instance part="S8" gate="G$1" x="48.26" y="40.64"/>
+<instance part="U17" gate="G$1" x="53.34" y="109.22"/>
+<instance part="U18" gate="G$1" x="119.38" y="109.22"/>
 <instance part="U$12" gate="G$1" x="73.66" y="132.08"/>
 <instance part="U$14" gate="G$1" x="154.94" y="132.08"/>
 <instance part="GND16" gate="1" x="50.8" y="101.6"/>
@@ -8115,6 +8130,8 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <instance part="GND25" gate="1" x="149.86" y="27.94"/>
 <instance part="+3V18" gate="G$1" x="149.86" y="48.26"/>
 <instance part="+3V23" gate="G$1" x="33.02" y="55.88"/>
+<instance part="+3V36" gate="G$1" x="233.68" y="132.08" rot="R270"/>
+<instance part="GND50" gate="1" x="175.26" y="132.08" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -8131,8 +8148,9 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="20.32" y1="121.92" x2="35.56" y2="121.92" width="0.1524" layer="91"/>
 <junction x="35.56" y="121.92"/>
 <wire x1="20.32" y1="121.92" x2="20.32" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="IN"/>
+<pinref part="U17" gate="G$1" pin="IN"/>
 <pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="U17" gate="G$1" pin="EN"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="111.76" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
@@ -8145,8 +8163,9 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="86.36" y1="116.84" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="121.92" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
 <junction x="101.6" y="121.92"/>
-<pinref part="U$18" gate="G$1" pin="IN"/>
+<pinref part="U18" gate="G$1" pin="IN"/>
 <pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="U18" gate="G$1" pin="EN"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -8160,7 +8179,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <pinref part="+3V23" gate="G$1" pin="+3V3"/>
 <wire x1="33.02" y1="53.34" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="8A"/>
+<pinref part="S8" gate="G$1" pin="8A"/>
 <wire x1="33.02" y1="48.26" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="45.72" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="43.18" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
@@ -8169,27 +8188,37 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="33.02" y1="35.56" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="33.02" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="30.48" x2="38.1" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="7A"/>
+<pinref part="S8" gate="G$1" pin="7A"/>
 <wire x1="38.1" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
 <junction x="33.02" y="33.02"/>
-<pinref part="U$8" gate="G$1" pin="6A"/>
+<pinref part="S8" gate="G$1" pin="6A"/>
 <wire x1="33.02" y1="35.56" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
 <junction x="33.02" y="35.56"/>
-<pinref part="U$8" gate="G$1" pin="5A"/>
+<pinref part="S8" gate="G$1" pin="5A"/>
 <wire x1="38.1" y1="38.1" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
 <junction x="33.02" y="38.1"/>
-<pinref part="U$8" gate="G$1" pin="4A"/>
+<pinref part="S8" gate="G$1" pin="4A"/>
 <wire x1="38.1" y1="40.64" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
 <junction x="33.02" y="40.64"/>
-<pinref part="U$8" gate="G$1" pin="3A"/>
+<pinref part="S8" gate="G$1" pin="3A"/>
 <wire x1="38.1" y1="43.18" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
 <junction x="33.02" y="43.18"/>
-<pinref part="U$8" gate="G$1" pin="2A"/>
+<pinref part="S8" gate="G$1" pin="2A"/>
 <wire x1="38.1" y1="45.72" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
 <junction x="33.02" y="45.72"/>
-<pinref part="U$8" gate="G$1" pin="1A"/>
+<pinref part="S8" gate="G$1" pin="1A"/>
 <wire x1="38.1" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
 <junction x="33.02" y="48.26"/>
+</segment>
+<segment>
+<pinref part="CON1" gate="G$1" pin="4"/>
+<pinref part="+3V36" gate="G$1" pin="+3V3"/>
+<wire x1="213.36" y1="132.08" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="CON1" gate="G$1" pin="2"/>
+<wire x1="215.9" y1="132.08" x2="231.14" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="134.62" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="134.62" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
+<junction x="215.9" y="132.08"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8214,11 +8243,11 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="154.94" y1="104.14" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$17" gate="G$1" pin="GND"/>
+<pinref part="U17" gate="G$1" pin="GND"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$18" gate="G$1" pin="GND"/>
+<pinref part="U18" gate="G$1" pin="GND"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -8234,6 +8263,16 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="149.86" y1="30.48" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
 <junction x="149.86" y="33.02"/>
 </segment>
+<segment>
+<pinref part="CON1" gate="G$1" pin="3"/>
+<pinref part="GND50" gate="1" pin="GND"/>
+<wire x1="193.04" y1="132.08" x2="190.5" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="132.08" x2="177.8" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="132.08" x2="190.5" y2="134.62" width="0.1524" layer="91"/>
+<junction x="190.5" y="132.08"/>
+<pinref part="CON1" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+1V2" class="0">
 <segment>
@@ -8244,9 +8283,9 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="68.58" y1="119.38" x2="73.66" y2="119.38" width="0.1524" layer="91"/>
 <junction x="73.66" y="119.38"/>
 <pinref part="U$12" gate="G$1" pin="+1V2"/>
-<pinref part="U$17" gate="G$1" pin="OUT"/>
+<pinref part="U17" gate="G$1" pin="OUT"/>
 <wire x1="68.58" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="FB"/>
+<pinref part="U17" gate="G$1" pin="FB"/>
 <wire x1="63.5" y1="111.76" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="111.76" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
 <junction x="68.58" y="116.84"/>
@@ -8262,7 +8301,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="154.94" y1="119.38" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
 <junction x="154.94" y="119.38"/>
 <pinref part="U$14" gate="G$1" pin="+2V8"/>
-<pinref part="U$18" gate="G$1" pin="OUT"/>
+<pinref part="U18" gate="G$1" pin="OUT"/>
 <wire x1="132.08" y1="116.84" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="116.84" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
@@ -8271,7 +8310,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 </net>
 <net name="ESP32_EN1" class="0">
 <segment>
-<pinref part="U$18" gate="G$1" pin="FB"/>
+<pinref part="U18" gate="G$1" pin="FB"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="93.98" x2="137.16" y2="91.44" width="0.1524" layer="91"/>
@@ -8299,56 +8338,224 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <wire x1="58.42" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
 <label x="60.96" y="48.26" size="1.778" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="1B"/>
+<pinref part="S8" gate="G$1" pin="1B"/>
 </segment>
 </net>
 <net name="MAX_IO1" class="0">
 <segment>
 <wire x1="58.42" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 <label x="60.96" y="45.72" size="1.778" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="2B"/>
+<pinref part="S8" gate="G$1" pin="2B"/>
 </segment>
 </net>
 <net name="MAX_IO2" class="0">
 <segment>
 <wire x1="58.42" y1="43.18" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
 <label x="60.96" y="43.18" size="1.778" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="3B"/>
+<pinref part="S8" gate="G$1" pin="3B"/>
 </segment>
 </net>
 <net name="MAX_IO3" class="0">
 <segment>
 <wire x1="58.42" y1="40.64" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
 <label x="60.96" y="40.64" size="1.778" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="4B"/>
+<pinref part="S8" gate="G$1" pin="4B"/>
 </segment>
 </net>
 <net name="MAX_IO4" class="0">
 <segment>
 <wire x1="58.42" y1="38.1" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
 <label x="60.96" y="38.1" size="1.778" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="5B"/>
+<pinref part="S8" gate="G$1" pin="5B"/>
 </segment>
 </net>
 <net name="MAX_IO5" class="0">
 <segment>
 <wire x1="58.42" y1="35.56" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
 <label x="60.96" y="35.56" size="1.778" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="6B"/>
+<pinref part="S8" gate="G$1" pin="6B"/>
 </segment>
 </net>
 <net name="MAX_IO6" class="0">
 <segment>
 <wire x1="58.42" y1="33.02" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
 <label x="60.96" y="33.02" size="1.778" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="7B"/>
+<pinref part="S8" gate="G$1" pin="7B"/>
 </segment>
 </net>
 <net name="MAX_IO7" class="0">
 <segment>
 <wire x1="58.42" y1="30.48" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
 <label x="60.96" y="30.48" size="1.778" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="8B"/>
+<pinref part="S8" gate="G$1" pin="8B"/>
+</segment>
+</net>
+<net name="MAX_IO8" class="0">
+<segment>
+<wire x1="213.36" y1="129.54" x2="228.6" y2="129.54" width="0.1524" layer="91"/>
+<label x="215.9" y="129.54" size="1.778" layer="95"/>
+<pinref part="CON1" gate="G$1" pin="6"/>
+</segment>
+</net>
+<net name="MAX_IO9" class="0">
+<segment>
+<wire x1="213.36" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
+<label x="215.9" y="127" size="1.778" layer="95"/>
+<pinref part="CON1" gate="G$1" pin="8"/>
+</segment>
+</net>
+<net name="MAX_IO10" class="0">
+<segment>
+<wire x1="213.36" y1="124.46" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
+<label x="215.9" y="124.46" size="1.778" layer="95"/>
+<pinref part="CON1" gate="G$1" pin="10"/>
+</segment>
+</net>
+<net name="MAX_IO11" class="0">
+<segment>
+<wire x1="213.36" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
+<label x="215.9" y="121.92" size="1.778" layer="95"/>
+<pinref part="CON1" gate="G$1" pin="12"/>
+</segment>
+</net>
+<net name="MAX_IO12" class="0">
+<segment>
+<wire x1="193.04" y1="121.92" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
+<label x="180.34" y="121.92" size="1.778" layer="95"/>
+<pinref part="CON1" gate="G$1" pin="11"/>
+</segment>
+</net>
+<net name="MAX_IO13" class="0">
+<segment>
+<wire x1="193.04" y1="124.46" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
+<label x="180.34" y="124.46" size="1.778" layer="95"/>
+<pinref part="CON1" gate="G$1" pin="9"/>
+</segment>
+</net>
+<net name="MAX_IO14" class="0">
+<segment>
+<wire x1="193.04" y1="127" x2="177.8" y2="127" width="0.1524" layer="91"/>
+<label x="180.34" y="127" size="1.778" layer="95"/>
+<pinref part="CON1" gate="G$1" pin="7"/>
+</segment>
+</net>
+<net name="MAX_IO15" class="0">
+<segment>
+<wire x1="193.04" y1="129.54" x2="177.8" y2="129.54" width="0.1524" layer="91"/>
+<label x="180.34" y="129.54" size="1.778" layer="95"/>
+<pinref part="CON1" gate="G$1" pin="5"/>
+</segment>
+</net>
+<net name="ESP32_IO33" class="0">
+<segment>
+<wire x1="228.6" y1="119.38" x2="213.36" y2="119.38" width="0.1524" layer="91"/>
+<label x="215.9" y="119.38" size="1.778" layer="95"/>
+<pinref part="CON1" gate="G$1" pin="14"/>
+</segment>
+</net>
+<net name="ESP32_IO0" class="0">
+<segment>
+<wire x1="193.04" y1="119.38" x2="177.8" y2="119.38" width="0.1524" layer="91"/>
+<label x="180.34" y="119.38" size="1.778" layer="95"/>
+<pinref part="CON1" gate="G$1" pin="13"/>
+</segment>
+</net>
+<net name="RS485_A0" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="81.28" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
+<label x="177.8" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RS485_A1" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="3"/>
+<wire x1="193.04" y1="78.74" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
+<label x="177.8" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RS485_A2" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="5"/>
+<wire x1="193.04" y1="76.2" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
+<label x="177.8" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RS485_A3" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="7"/>
+<wire x1="193.04" y1="73.66" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
+<label x="177.8" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP32_IO1" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="9"/>
+<wire x1="193.04" y1="71.12" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
+<label x="177.8" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RS485_B0" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="81.28" x2="228.6" y2="81.28" width="0.1524" layer="91"/>
+<label x="215.9" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RS485_B1" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="4"/>
+<wire x1="213.36" y1="78.74" x2="228.6" y2="78.74" width="0.1524" layer="91"/>
+<label x="215.9" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RS485_B2" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="6"/>
+<wire x1="213.36" y1="76.2" x2="228.6" y2="76.2" width="0.1524" layer="91"/>
+<label x="215.9" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RS485_B3" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="8"/>
+<wire x1="213.36" y1="73.66" x2="228.6" y2="73.66" width="0.1524" layer="91"/>
+<label x="215.9" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP32_IO3" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="10"/>
+<wire x1="213.36" y1="71.12" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
+<label x="215.9" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP32_IO12" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="11"/>
+<wire x1="193.04" y1="68.58" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
+<label x="177.8" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP32_IO13" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="13"/>
+<wire x1="193.04" y1="66.04" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
+<label x="177.8" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP32_IO14" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="12"/>
+<wire x1="213.36" y1="68.58" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
+<label x="215.9" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP32_IO15" class="0">
+<segment>
+<pinref part="CON2" gate="G$1" pin="14"/>
+<wire x1="213.36" y1="66.04" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
+<label x="215.9" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -8364,16 +8571,16 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="A1" gate="G$1" x="71.12" y="101.6"/>
-<instance part="U$3" gate="G$1" x="167.64" y="104.14"/>
+<instance part="CON3" gate="G$1" x="167.64" y="104.14"/>
 <instance part="C1" gate="G$1" x="93.98" y="127"/>
 <instance part="C2" gate="G$1" x="106.68" y="127"/>
 <instance part="+3V1" gate="G$1" x="106.68" y="137.16"/>
 <instance part="GND1" gate="1" x="106.68" y="119.38"/>
 <instance part="GND2" gate="1" x="93.98" y="119.38"/>
-<instance part="R1" gate="G$1" x="20.32" y="127" rot="R90"/>
-<instance part="C3" gate="G$1" x="20.32" y="114.3"/>
-<instance part="+3V2" gate="G$1" x="20.32" y="139.7"/>
-<instance part="GND3" gate="1" x="20.32" y="104.14"/>
+<instance part="R1" gate="G$1" x="17.78" y="127" rot="R90"/>
+<instance part="C3" gate="G$1" x="17.78" y="114.3"/>
+<instance part="+3V2" gate="G$1" x="17.78" y="139.7"/>
+<instance part="GND3" gate="1" x="17.78" y="104.14"/>
 <instance part="S1" gate="G$1" x="30.48" y="30.48"/>
 <instance part="S2" gate="G$1" x="58.42" y="30.48"/>
 <instance part="GND4" gate="1" x="33.02" y="17.78"/>
@@ -8426,7 +8633,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="20.32" y1="132.08" x2="20.32" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="132.08" x2="17.78" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
@@ -8435,7 +8642,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 </segment>
 <segment>
 <wire x1="137.16" y1="127" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="DOVDD"/>
+<pinref part="CON3" gate="G$1" pin="DOVDD"/>
 <wire x1="137.16" y1="121.92" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 </segment>
@@ -8477,7 +8684,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="20.32" y1="106.68" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="106.68" x2="17.78" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -8531,9 +8738,9 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
-<pinref part="U$3" gate="G$1" pin="DGND"/>
+<pinref part="CON3" gate="G$1" pin="DGND"/>
 <wire x1="129.54" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="AGND"/>
+<pinref part="CON3" gate="G$1" pin="AGND"/>
 <wire x1="144.78" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="111.76" x2="144.78" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="111.76" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
@@ -8549,11 +8756,11 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="116.84" x2="20.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="116.84" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="A1" gate="G$1" pin="EN"/>
-<wire x1="20.32" y1="119.38" x2="20.32" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="119.38" x2="20.32" y2="119.38" width="0.1524" layer="91"/>
-<junction x="20.32" y="119.38"/>
+<wire x1="17.78" y1="119.38" x2="17.78" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="119.38" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
+<junction x="17.78" y="119.38"/>
 <label x="33.02" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8581,13 +8788,6 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="66.04" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ESP32_IO8" class="0">
-<segment>
-<wire x1="109.22" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="A1" gate="G$1" pin="SDI/SD1"/>
-<label x="88.9" y="111.76" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="ESP32_IO2" class="0">
 <segment>
 <wire x1="55.88" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
@@ -8595,7 +8795,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="33.02" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="SIO_C"/>
+<pinref part="CON3" gate="G$1" pin="SIO_C"/>
 <wire x1="152.4" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
 <label x="134.62" y="101.6" size="1.778" layer="95"/>
 <wire x1="114.3" y1="25.4" x2="114.3" y2="7.62" width="0.1524" layer="91"/>
@@ -8624,7 +8824,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="33.02" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="Y3"/>
+<pinref part="CON3" gate="G$1" pin="Y3"/>
 <wire x1="182.88" y1="99.06" x2="198.12" y2="99.06" width="0.1524" layer="91"/>
 <label x="185.42" y="99.06" size="1.778" layer="95"/>
 </segment>
@@ -8636,7 +8836,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="33.02" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="Y4"/>
+<pinref part="CON3" gate="G$1" pin="Y4"/>
 <wire x1="182.88" y1="96.52" x2="198.12" y2="96.52" width="0.1524" layer="91"/>
 <label x="185.42" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -8648,7 +8848,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="33.02" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="Y2"/>
+<pinref part="CON3" gate="G$1" pin="Y2"/>
 <wire x1="182.88" y1="101.6" x2="198.12" y2="101.6" width="0.1524" layer="91"/>
 <label x="185.42" y="101.6" size="1.778" layer="95"/>
 </segment>
@@ -8660,7 +8860,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="33.02" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="Y5"/>
+<pinref part="CON3" gate="G$1" pin="Y5"/>
 <wire x1="182.88" y1="93.98" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
 <label x="185.42" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -8693,7 +8893,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="33.02" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="PCLK"/>
+<pinref part="CON3" gate="G$1" pin="PCLK"/>
 <wire x1="182.88" y1="121.92" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
 <label x="185.42" y="121.92" size="1.778" layer="95"/>
 </segment>
@@ -8707,54 +8907,14 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 </net>
 <net name="ESP32_IO35" class="0">
 <segment>
-<wire x1="55.88" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="A1" gate="G$1" pin="IO25"/>
-<label x="33.02" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="A1" gate="G$1" pin="IO35"/>
 <wire x1="86.36" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
 <label x="88.9" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="Y7"/>
+<pinref part="CON3" gate="G$1" pin="Y7"/>
 <wire x1="182.88" y1="88.9" x2="198.12" y2="88.9" width="0.1524" layer="91"/>
 <label x="185.42" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ESP32_IO7" class="0">
-<segment>
-<wire x1="109.22" y1="114.3" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="A1" gate="G$1" pin="SDO/SD0"/>
-<label x="88.9" y="114.3" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ESP32_IO9" class="0">
-<segment>
-<wire x1="109.22" y1="109.22" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="A1" gate="G$1" pin="SHD/SD2"/>
-<label x="88.9" y="109.22" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ESP32_IO10" class="0">
-<segment>
-<wire x1="109.22" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="A1" gate="G$1" pin="SWP/SD3"/>
-<label x="88.9" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ESP32_IO11" class="0">
-<segment>
-<wire x1="109.22" y1="104.14" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="A1" gate="G$1" pin="SCS/CMD"/>
-<label x="88.9" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ESP32_IO6" class="0">
-<segment>
-<wire x1="109.22" y1="101.6" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="A1" gate="G$1" pin="SCK/CLK"/>
-<label x="88.9" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESP32_IO3" class="0">
@@ -8778,7 +8938,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="88.9" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="Y6"/>
+<pinref part="CON3" gate="G$1" pin="Y6"/>
 <wire x1="182.88" y1="91.44" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
 <label x="185.42" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -8809,7 +8969,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="88.9" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="HREF"/>
+<pinref part="CON3" gate="G$1" pin="HREF"/>
 <wire x1="182.88" y1="124.46" x2="198.12" y2="124.46" width="0.1524" layer="91"/>
 <label x="185.42" y="124.46" size="1.778" layer="95"/>
 </segment>
@@ -8821,7 +8981,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="88.9" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="SIO_D"/>
+<pinref part="CON3" gate="G$1" pin="SIO_D"/>
 <wire x1="152.4" y1="99.06" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
 <label x="134.62" y="99.06" size="1.778" layer="95"/>
 <wire x1="121.92" y1="25.4" x2="121.92" y2="7.62" width="0.1524" layer="91"/>
@@ -8853,7 +9013,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="33.02" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="Y8"/>
+<pinref part="CON3" gate="G$1" pin="Y8"/>
 <wire x1="182.88" y1="86.36" x2="198.12" y2="86.36" width="0.1524" layer="91"/>
 <label x="185.42" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -8865,7 +9025,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="33.02" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="Y9"/>
+<pinref part="CON3" gate="G$1" pin="Y9"/>
 <wire x1="182.88" y1="83.82" x2="198.12" y2="83.82" width="0.1524" layer="91"/>
 <label x="185.42" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -8874,7 +9034,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="109.22" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="PWDN"/>
+<pinref part="CON3" gate="G$1" pin="PWDN"/>
 <wire x1="213.36" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8883,7 +9043,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="114.3" x2="228.6" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="114.3" x2="182.88" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="RESET"/>
+<pinref part="CON3" gate="G$1" pin="RESET"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="111.76" x2="228.6" y2="114.3" width="0.1524" layer="91"/>
 <junction x="228.6" y="114.3"/>
@@ -8891,9 +9051,14 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 </net>
 <net name="ESP32_IO25" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="VSYNC"/>
+<pinref part="CON3" gate="G$1" pin="VSYNC"/>
 <wire x1="182.88" y1="119.38" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
 <label x="185.42" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="A1" gate="G$1" pin="IO25"/>
+<wire x1="55.88" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
+<label x="33.02" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+1V2" class="0">
@@ -8903,7 +9068,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <pinref part="U$9" gate="G$1" pin="+1V2"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="DVDD"/>
+<pinref part="CON3" gate="G$1" pin="DVDD"/>
 <wire x1="152.4" y1="124.46" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="124.46" x2="144.78" y2="127" width="0.1524" layer="91"/>
 <pinref part="U$13" gate="G$1" pin="+1V2"/>
@@ -8917,14 +9082,14 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 </segment>
 <segment>
 <wire x1="129.54" y1="127" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="AVDD"/>
+<pinref part="CON3" gate="G$1" pin="AVDD"/>
 <wire x1="129.54" y1="119.38" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="G$1" pin="+2V8"/>
 </segment>
 </net>
 <net name="CLK_12M" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="XVCLK"/>
+<pinref part="CON3" gate="G$1" pin="XVCLK"/>
 <wire x1="152.4" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
 <label x="134.62" y="106.68" size="1.778" layer="95"/>
 </segment>
@@ -8960,15 +9125,15 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <instance part="+3V19" gate="G$1" x="17.78" y="104.14"/>
 <instance part="GND26" gate="1" x="35.56" y="99.06"/>
 <instance part="C14" gate="G$1" x="22.86" y="129.54"/>
-<instance part="C15" gate="G$1" x="66.04" y="30.48"/>
-<instance part="C16" gate="G$1" x="45.72" y="30.48"/>
-<instance part="C17" gate="G$1" x="83.82" y="30.48"/>
-<instance part="GND27" gate="1" x="45.72" y="20.32"/>
-<instance part="GND28" gate="1" x="66.04" y="20.32"/>
-<instance part="GND29" gate="1" x="83.82" y="20.32"/>
-<instance part="+3V20" gate="G$1" x="45.72" y="38.1"/>
-<instance part="+3V21" gate="G$1" x="66.04" y="38.1"/>
-<instance part="+3V22" gate="G$1" x="83.82" y="38.1"/>
+<instance part="C15" gate="G$1" x="53.34" y="33.02"/>
+<instance part="C16" gate="G$1" x="33.02" y="33.02"/>
+<instance part="C17" gate="G$1" x="71.12" y="33.02"/>
+<instance part="GND27" gate="1" x="33.02" y="22.86"/>
+<instance part="GND28" gate="1" x="53.34" y="22.86"/>
+<instance part="GND29" gate="1" x="71.12" y="22.86"/>
+<instance part="+3V20" gate="G$1" x="33.02" y="40.64"/>
+<instance part="+3V21" gate="G$1" x="53.34" y="40.64"/>
+<instance part="+3V22" gate="G$1" x="71.12" y="40.64"/>
 <instance part="D1" gate="G$1" x="190.5" y="147.32" rot="R90"/>
 <instance part="GND30" gate="1" x="203.2" y="147.32" rot="R90"/>
 <instance part="D2" gate="G$1" x="190.5" y="121.92" rot="R90"/>
@@ -8997,6 +9162,18 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <instance part="R29" gate="G$1" x="223.52" y="58.42" rot="R270"/>
 <instance part="+3V30" gate="G$1" x="223.52" y="86.36"/>
 <instance part="GND37" gate="1" x="223.52" y="50.8"/>
+<instance part="C32" gate="G$1" x="109.22" y="33.02"/>
+<instance part="C33" gate="G$1" x="88.9" y="33.02"/>
+<instance part="C34" gate="G$1" x="127" y="33.02"/>
+<instance part="GND51" gate="1" x="88.9" y="22.86"/>
+<instance part="GND52" gate="1" x="109.22" y="22.86"/>
+<instance part="GND53" gate="1" x="127" y="22.86"/>
+<instance part="+3V37" gate="G$1" x="88.9" y="40.64"/>
+<instance part="+3V38" gate="G$1" x="109.22" y="40.64"/>
+<instance part="+3V39" gate="G$1" x="127" y="40.64"/>
+<instance part="C35" gate="G$1" x="144.78" y="33.02"/>
+<instance part="GND54" gate="1" x="144.78" y="22.86"/>
+<instance part="+3V40" gate="G$1" x="144.78" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -9296,17 +9473,17 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <pinref part="C16" gate="G$1" pin="1"/>
 <pinref part="+3V20" gate="G$1" pin="+3V3"/>
-<wire x1="45.72" y1="33.02" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="35.56" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="1"/>
 <pinref part="+3V21" gate="G$1" pin="+3V3"/>
-<wire x1="66.04" y1="33.02" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="35.56" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V22" gate="G$1" pin="+3V3"/>
 <pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="35.56" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="38.1" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
@@ -9323,6 +9500,26 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <pinref part="R27" gate="G$1" pin="1"/>
 <pinref part="+3V30" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="C33" gate="G$1" pin="1"/>
+<pinref part="+3V37" gate="G$1" pin="+3V3"/>
+<wire x1="88.9" y1="35.56" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C32" gate="G$1" pin="1"/>
+<pinref part="+3V38" gate="G$1" pin="+3V3"/>
+<wire x1="109.22" y1="35.56" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V39" gate="G$1" pin="+3V3"/>
+<pinref part="C34" gate="G$1" pin="1"/>
+<wire x1="127" y1="38.1" x2="127" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V40" gate="G$1" pin="+3V3"/>
+<pinref part="C35" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="38.1" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -9373,17 +9570,17 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
 <pinref part="GND27" gate="1" pin="GND"/>
-<wire x1="45.72" y1="25.4" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="27.94" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND28" gate="1" pin="GND"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="22.86" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="25.4" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="GND29" gate="1" pin="GND"/>
-<wire x1="83.82" y1="25.4" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="27.94" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="GND"/>
@@ -9420,6 +9617,26 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <pinref part="GND37" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C33" gate="G$1" pin="2"/>
+<pinref part="GND51" gate="1" pin="GND"/>
+<wire x1="88.9" y1="27.94" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND52" gate="1" pin="GND"/>
+<pinref part="C32" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="25.4" x2="109.22" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C34" gate="G$1" pin="2"/>
+<pinref part="GND53" gate="1" pin="GND"/>
+<wire x1="127" y1="27.94" x2="127" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C35" gate="G$1" pin="2"/>
+<pinref part="GND54" gate="1" pin="GND"/>
+<wire x1="144.78" y1="27.94" x2="144.78" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -9485,7 +9702,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="22.86" y1="134.62" x2="43.18" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RS485_B1" class="0">
+<net name="RS485_B0" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="R19" gate="G$1" pin="2"/>
@@ -9501,7 +9718,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="231.14" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RS485_A1" class="0">
+<net name="RS485_A0" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
 <pinref part="R18" gate="G$1" pin="2"/>
@@ -9518,7 +9735,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="231.14" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RS485_B2" class="0">
+<net name="RS485_B1" class="0">
 <segment>
 <pinref part="R23" gate="G$1" pin="1"/>
 <pinref part="R22" gate="G$1" pin="2"/>
@@ -9534,7 +9751,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <pinref part="U5" gate="A" pin="B"/>
 </segment>
 </net>
-<net name="RS485_A2" class="0">
+<net name="RS485_A1" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="R21" gate="G$1" pin="2"/>
@@ -9551,23 +9768,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <pinref part="U5" gate="A" pin="A"/>
 </segment>
 </net>
-<net name="RS485_B3" class="0">
-<segment>
-<pinref part="R26" gate="G$1" pin="1"/>
-<pinref part="R25" gate="G$1" pin="2"/>
-<pinref part="D3" gate="G$1" pin="IO1"/>
-<wire x1="182.88" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="91.44" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="88.9" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
-<junction x="213.36" y="88.9"/>
-<junction x="177.8" y="91.44"/>
-<wire x1="213.36" y1="88.9" x2="246.38" y2="88.9" width="0.1524" layer="91"/>
-<label x="231.14" y="88.9" size="1.778" layer="95"/>
-<pinref part="U7" gate="A" pin="B"/>
-</segment>
-</net>
-<net name="RS485_A3" class="0">
+<net name="RS485_A2" class="0">
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -9584,7 +9785,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <pinref part="U7" gate="A" pin="A"/>
 </segment>
 </net>
-<net name="RS485_B4" class="0">
+<net name="RS485_B3" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="1"/>
 <pinref part="R28" gate="G$1" pin="2"/>
@@ -9600,7 +9801,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <pinref part="U6" gate="A" pin="B"/>
 </segment>
 </net>
-<net name="RS485_A4" class="0">
+<net name="RS485_A3" class="0">
 <segment>
 <pinref part="R28" gate="G$1" pin="1"/>
 <pinref part="R27" gate="G$1" pin="2"/>
@@ -9624,6 +9825,22 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <label x="83.82" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="RS485_B2" class="0">
+<segment>
+<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="D3" gate="G$1" pin="IO1"/>
+<wire x1="182.88" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="91.44" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="88.9" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="88.9" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
+<junction x="213.36" y="88.9"/>
+<junction x="177.8" y="91.44"/>
+<wire x1="213.36" y1="88.9" x2="246.38" y2="88.9" width="0.1524" layer="91"/>
+<label x="231.14" y="88.9" size="1.778" layer="95"/>
+<pinref part="U7" gate="A" pin="B"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -9633,8 +9850,8 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
-<instance part="U$4" gate="G$1" x="116.84" y="83.82"/>
-<instance part="U$5" gate="G$1" x="154.94" y="71.12"/>
+<instance part="U14" gate="G$1" x="116.84" y="83.82"/>
+<instance part="SPR1" gate="G$1" x="154.94" y="71.12"/>
 <instance part="U$6" gate="G$1" x="190.5" y="88.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="195.58" y="91.44" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="191.77" y="81.28" size="1.778" layer="96"/>
@@ -9643,7 +9860,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <instance part="C19" gate="G$1" x="63.5" y="119.38"/>
 <instance part="C20" gate="G$1" x="76.2" y="119.38"/>
 <instance part="C21" gate="G$1" x="88.9" y="119.38"/>
-<instance part="+3V24" gate="G$1" x="50.8" y="129.54"/>
+<instance part="+3V24" gate="G$1" x="50.8" y="132.08"/>
 <instance part="GND38" gate="1" x="50.8" y="104.14"/>
 <instance part="C22" gate="G$1" x="73.66" y="101.6" rot="R180"/>
 <instance part="GND39" gate="1" x="73.66" y="96.52"/>
@@ -9677,7 +9894,7 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <segment>
 <pinref part="GND40" gate="1" pin="GND"/>
 <wire x1="96.52" y1="58.42" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="MODE"/>
+<pinref part="U14" gate="G$1" pin="MODE"/>
 <wire x1="96.52" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -9685,70 +9902,14 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="71.12" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="SPKVDD" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="SPKVDD"/>
-<wire x1="101.6" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="DBVDD"/>
-<wire x1="101.6" y1="106.68" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="DCVDD"/>
-<wire x1="101.6" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="AVDD"/>
-<wire x1="101.6" y1="111.76" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="111.76" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="+3V24" gate="G$1" pin="+3V3"/>
-<pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="127" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="124.46" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="124.46" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="124.46" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="124.46" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="124.46" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
-<junction x="50.8" y="124.46"/>
-<pinref part="C20" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="121.92" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
-<junction x="76.2" y="124.46"/>
-<pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="121.92" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
-<junction x="63.5" y="124.46"/>
-<wire x1="99.06" y1="124.46" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
-<junction x="88.9" y="124.46"/>
-<wire x1="99.06" y1="109.22" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
-<junction x="99.06" y="111.76"/>
-<wire x1="99.06" y1="106.68" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
-<junction x="99.06" y="109.22"/>
-<wire x1="99.06" y1="104.14" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
-<junction x="99.06" y="106.68"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="VMID"/>
-<wire x1="101.6" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="101.6" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="109.22" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SPKGND" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="SPKGND"/>
-<wire x1="101.6" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="DGND"/>
-<wire x1="101.6" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="GND38" gate="1" pin="GND"/>
 <pinref part="C18" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="106.68" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="111.76" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="111.76" x2="88.9" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="111.76" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
-<junction x="50.8" y="111.76"/>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="111.76" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
 <junction x="76.2" y="111.76"/>
@@ -9758,80 +9919,97 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="88.9" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
 <junction x="88.9" y="111.76"/>
 <wire x1="96.52" y1="111.76" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="AGND"/>
-<wire x1="96.52" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="93.98" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
-<junction x="96.52" y="96.52"/>
 <wire x1="96.52" y1="91.44" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="GND38" gate="1" pin="GND"/>
+<wire x1="96.52" y1="93.98" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="106.68" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
+<junction x="50.8" y="111.76"/>
+<pinref part="U14" gate="G$1" pin="AGND"/>
+<wire x1="101.6" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
+<junction x="96.52" y="96.52"/>
+<pinref part="U14" gate="G$1" pin="DGND"/>
+<wire x1="101.6" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
 <junction x="96.52" y="93.98"/>
+<pinref part="U14" gate="G$1" pin="SPKGND"/>
+<wire x1="101.6" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="U14" gate="G$1" pin="VMID"/>
+<wire x1="101.6" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="101.6" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="109.22" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CLK_12M" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="MCLK"/>
+<pinref part="U14" gate="G$1" pin="MCLK"/>
 <wire x1="101.6" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
 <label x="81.28" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESP32_IO4" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="FRAME"/>
+<pinref part="U14" gate="G$1" pin="FRAME"/>
 <wire x1="101.6" y1="81.28" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
 <label x="81.28" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESP32_IO32" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="ADCDAT"/>
+<pinref part="U14" gate="G$1" pin="ADCDAT"/>
 <wire x1="101.6" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
 <label x="81.28" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESP32_IO1" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="DACDAT"/>
+<pinref part="U14" gate="G$1" pin="DACDAT"/>
 <wire x1="101.6" y1="76.2" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
 <label x="81.28" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESP32_IO3" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="BCLK"/>
+<pinref part="U14" gate="G$1" pin="BCLK"/>
 <wire x1="101.6" y1="73.66" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
 <label x="81.28" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESP32_IO33" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="SDIN"/>
+<pinref part="U14" gate="G$1" pin="SDIN"/>
 <wire x1="101.6" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
 <label x="81.28" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESP32_IO0" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="SCLK"/>
+<pinref part="U14" gate="G$1" pin="SCLK"/>
 <wire x1="101.6" y1="63.5" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
 <label x="81.28" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="SPKOUTP"/>
+<pinref part="U14" gate="G$1" pin="SPKOUTP"/>
 <wire x1="132.08" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="73.66" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="1"/>
+<pinref part="SPR1" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="78.74" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="2"/>
+<pinref part="SPR1" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="66.04" x2="154.94" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="63.5" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="SPKOUTN"/>
+<pinref part="U14" gate="G$1" pin="SPKOUTN"/>
 <wire x1="142.24" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9868,20 +10046,20 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <net name="N$23" class="0">
 <segment>
 <pinref part="C23" gate="G$1" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="MICN"/>
+<pinref part="U14" gate="G$1" pin="MICN"/>
 <wire x1="139.7" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="C24" gate="G$1" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="MICP"/>
+<pinref part="U14" gate="G$1" pin="MICP"/>
 <wire x1="139.7" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="MICBIAS"/>
+<pinref part="U14" gate="G$1" pin="MICBIAS"/>
 <wire x1="132.08" y1="99.06" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="99.06" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="C25" gate="G$1" pin="1"/>
@@ -9902,6 +10080,43 @@ http://www.ti.com/lit/sg/slyt484a/slyt484a.pdf</description>
 <wire x1="175.26" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="104.14" x2="175.26" y2="106.68" width="0.1524" layer="91"/>
 <junction x="175.26" y="106.68"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<wire x1="99.06" y1="104.14" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="106.68" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="109.22" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="111.76" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="124.46" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="124.46" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="124.46" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="124.46" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="124.46" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C20" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="121.92" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
+<junction x="76.2" y="124.46"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="121.92" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
+<junction x="63.5" y="124.46"/>
+<wire x1="99.06" y1="124.46" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
+<junction x="88.9" y="124.46"/>
+<pinref part="+3V24" gate="G$1" pin="+3V3"/>
+<wire x1="50.8" y1="129.54" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
+<junction x="50.8" y="124.46"/>
+<pinref part="U14" gate="G$1" pin="SPKVDD"/>
+<wire x1="101.6" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U14" gate="G$1" pin="DBVDD"/>
+<wire x1="101.6" y1="106.68" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
+<junction x="99.06" y="106.68"/>
+<pinref part="U14" gate="G$1" pin="DCVDD"/>
+<wire x1="101.6" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
+<junction x="99.06" y="109.22"/>
+<pinref part="U14" gate="G$1" pin="AVDD"/>
+<wire x1="101.6" y1="111.76" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
+<junction x="99.06" y="111.76"/>
 </segment>
 </net>
 </nets>
@@ -10089,6 +10304,8 @@ TEMPERATURE SENSOR</text>
 <label x="30.48" y="53.34" size="1.778" layer="95"/>
 <wire x1="185.42" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
 <label x="170.18" y="106.68" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="SDI"/>
+<pinref part="U3" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="ESP32_IO0" class="0">
@@ -10100,6 +10317,8 @@ TEMPERATURE SENSOR</text>
 <label x="30.48" y="55.88" size="1.778" layer="95"/>
 <wire x1="185.42" y1="109.22" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
 <label x="170.18" y="109.22" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="SCK"/>
+<pinref part="U3" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -10131,6 +10350,53 @@ TEMPERATURE SENSOR</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,2,86.36,129.54,A1,VDD3V3,+3V3,,,"/>
+<approved hash="104,2,86.36,73.66,A1,EXP,GND,,,"/>
+<approved hash="104,2,152.4,111.76,U$3,AGND,GND,,,"/>
+<approved hash="104,2,152.4,119.38,U$3,AVDD,+2V8,,,"/>
+<approved hash="104,2,152.4,124.46,U$3,DVDD,+1V2,,,"/>
+<approved hash="104,2,152.4,121.92,U$3,DOVDD,+3V3,,,"/>
+<approved hash="104,2,152.4,114.3,U$3,DGND,GND,,,"/>
+<approved hash="104,4,101.6,104.14,U$4,SPKVDD,+3V3,,,"/>
+<approved hash="104,4,101.6,96.52,U$4,AGND,GND,,,"/>
+<approved hash="104,4,101.6,111.76,U$4,AVDD,+3V3,,,"/>
+<approved hash="202,4,132.08,109.22,U$4,AUX,,,,"/>
+<approved hash="104,4,101.6,109.22,U$4,DCVDD,+3V3,,,"/>
+<approved hash="104,4,101.6,93.98,U$4,DGND,GND,,,"/>
+<approved hash="104,4,101.6,91.44,U$4,SPKGND,GND,,,"/>
+<approved hash="104,4,101.6,106.68,U$4,DBVDD,+3V3,,,"/>
+<approved hash="104,5,91.44,129.54,U1,VCC,+3V3,,,"/>
+<approved hash="104,5,76.2,63.5,U2,VDD,+3V3,,,"/>
+<approved hash="104,5,76.2,66.04,U2,VDDIO,+3V3,,,"/>
+<approved hash="104,5,215.9,96.52,U3,EP,GND,,,"/>
+<approved hash="104,5,215.9,127,U3,VDD,+3V3,,,"/>
+<approved hash="104,5,187.96,53.34,U$7,VDD,+3V3,,,"/>
+<approved hash="104,5,187.96,50.8,U$7,VSS,GND,,,"/>
+<approved hash="104,3,157.48,127,U5,VCC,+3V3,,,"/>
+<approved hash="104,3,157.48,73.66,U6,VCC,+3V3,,,"/>
+<approved hash="104,3,157.48,99.06,U7,VCC,+3V3,,,"/>
+<approved hash="104,3,43.18,144.78,U8,VL,+3V3,,,"/>
+<approved hash="104,3,43.18,124.46,U8,DGND,GND,,,"/>
+<approved hash="104,3,43.18,119.38,U8,AGND,GND,,,"/>
+<approved hash="104,3,43.18,134.62,U8,V18,N$17,,,"/>
+<approved hash="104,3,157.48,152.4,U4,VCC,+3V3,,,"/>
+<approved hash="104,1,63.5,116.84,U$17,OUT,+1V2,,,"/>
+<approved hash="104,1,38.1,116.84,U$17,IN,+3V3,,,"/>
+<approved hash="104,1,38.1,111.76,U$17,EN,+3V3,,,"/>
+<approved hash="104,1,63.5,111.76,U$17,FB,+1V2,,,"/>
+<approved hash="104,1,129.54,116.84,U$18,OUT,+2V8,,,"/>
+<approved hash="104,1,104.14,116.84,U$18,IN,+3V3,,,"/>
+<approved hash="104,1,104.14,111.76,U$18,EN,+3V3,,,"/>
+<approved hash="104,1,129.54,111.76,U$18,FB,ESP32_EN1,,,"/>
+<approved hash="202,1,101.6,38.1,Y1,!ST,,,,"/>
+<approved hash="104,1,127,43.18,Y1,VCC,+3V3,,,"/>
+<approved hash="115,3,130.071,89.431,FRAME1,,,,,"/>
+<approved hash="115,2,130.071,89.431,FRAME2,,,,,"/>
+<approved hash="115,4,130.071,89.431,FRAME3,,,,,"/>
+<approved hash="115,5,130.071,89.431,FRAME4,,,,,"/>
+<approved hash="115,1,130.071,89.431,FRAME5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
