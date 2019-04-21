@@ -37,6 +37,7 @@
 | 4 | res 4.7k 1206 | | | | |
 | 0 | Res 1k 1206 | | | | |
 | 2 | Res 100R 1206 | | | | |
+| 1 | 47uF 35V 5x5.8 | EEEFT1V470AR | | | |
 | 1 | 220pF 50V 0805 | [CL21B221KBANNNC](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B221KBANNNC_220pF-221-10-50V_C53172.html) | | | |
 |  1   | 1uF 16V X7R 0805                  | [CL21B105KOFNNNE](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html) |                |               |           |
 |  4  | 22uF 16V X7R 1210                 | C3225X7R1C226KT000N                                          |  |  |  |
