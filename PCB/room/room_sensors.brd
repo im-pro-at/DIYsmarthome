@@ -8,7 +8,7 @@
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,10 +23,10 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -2848,7 +2848,6 @@ Please make sure your boards conform to these design rules.
 <attribute name="MF" value="Texas Instruments" x="71.882" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="69.68003125" y="25.76643125" size="2.08761875" layer="25" ratio="10" rot="SR270"/>
 </element>
-<element name="D6" library="diode" package="SMB" value="B360B-13-F" x="35.306" y="17.018"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -5480,9 +5479,9 @@ Please make sure your boards conform to these design rules.
 <wire x1="16.51" y1="8.89" x2="13.6525" y2="11.7475" width="1.016" layer="1"/>
 <wire x1="13.6525" y1="11.7475" x2="13.6525" y2="18.285" width="1.016" layer="1"/>
 <wire x1="13.6525" y1="18.285" x2="13.7825" y2="18.415" width="1.016" layer="1"/>
-<contactref element="D6" pad="C"/>
-<wire x1="33.106" y1="17.018" x2="33.106" y2="13.495" width="0.8128" layer="1"/>
 <wire x1="33.106" y1="13.495" x2="33.02" y2="13.409" width="0.8128" layer="1"/>
+<contactref element="CON1" pad="2"/>
+<wire x1="38.1" y1="21.4" x2="38.1" y2="13.409" width="1.016" layer="1"/>
 </signal>
 <signal name="N$32">
 <contactref element="U12" pad="4"/>
@@ -5527,38 +5526,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="15.875" y1="22.095" x2="15.875" y2="20.385" width="0.254" layer="1"/>
 <wire x1="15.875" y1="20.385" x2="16.575" y2="19.685" width="0.254" layer="1"/>
 </signal>
-<signal name="N$31">
-<contactref element="CON1" pad="2"/>
-<contactref element="D6" pad="A"/>
-<wire x1="37.506" y1="17.018" x2="37.506" y2="20.806" width="0.8128" layer="1"/>
-<wire x1="37.506" y1="20.806" x2="38.1" y2="21.4" width="0.8128" layer="1"/>
-</signal>
 </signals>
-<errors>
-<approved hash="19,1,5799cd91ccc456cc"/>
-<approved hash="19,1,5726cd2ece45544d"/>
-<approved hash="19,1,d5da4fd24fced5c6"/>
-<approved hash="19,1,fd9acb92caf9fcf1"/>
-<approved hash="19,1,7fd949d149f37ffb"/>
-<approved hash="19,1,fd25cb2dc878fe70"/>
-<approved hash="19,1,f1f7d1ffd2c7f2cf"/>
-<approved hash="19,1,e022c02acd5ced54"/>
-<approved hash="19,1,562042284f5e5b56"/>
-<approved hash="19,1,47f553fd50c544cd"/>
-<approved hash="19,1,b55949514e54b25c"/>
-<approved hash="19,1,bc60406841dbbdd3"/>
-<approved hash="19,1,b3f34ffb4ec2b2ca"/>
-<approved hash="19,1,2361416940e322eb"/>
-<approved hash="19,1,2a5848504f6c2d64"/>
-<approved hash="19,1,2cf24efa4ffa2df2"/>
-<approved hash="19,16,05b47bbc79400748"/>
-<approved hash="19,16,6b32d1fa1117e461"/>
-<approved hash="19,16,51a7b9b27a419391"/>
-<approved hash="19,16,46ee05e35fd1f0c1"/>
-<approved hash="19,16,e1568daeb8ab669d"/>
-<approved hash="19,16,7af0ee2906f8ede8"/>
-<approved hash="19,16,d6b6f2bef047d44f"/>
-</errors>
 </board>
 </drawing>
 </eagle>

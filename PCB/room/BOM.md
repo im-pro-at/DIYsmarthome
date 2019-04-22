@@ -11,7 +11,7 @@
 | 1   | audio codec         | [WM8974](https://octopart.com/search?q=WM8974) | Lcsc, Digi-Key | 1.74     | 1.74 |
 | 1   | mic         | [B4013AM423-008](https://lcsc.com/search?q=B4013AM423-008) | Lcsc | 0.15     | 0.15 |
 | 1   | speaker         | [SMS-2008MS-R](https://octopart.com/search?q=SMS-2008MS-R) | Digi-Key | 4.80	     | 4.80	 |
-| 1   | ambient light sensor   | [ BH1750FVI](https://octopart.com/search?q=BH1750FVI) | Lcsc, Digi-Key | 0.80   | 0.80 |
+| 1   | ambient light sensor   | [BH1750FVI](https://octopart.com/search?q=BH1750FVI) | Lcsc, Digi-Key | 0.80   | 0.80 |
 | 1   | PIR sensor         | [AS312](https://lcsc.com/search?q=AS312) | Lcsc | 0.81     | 0.81 |
 | 1   | PIR sensor case      | [S9008](https://lcsc.com/search?q=S9008) | Lcsc | 0.07     | 0.07 |
 | 1   | vibration detection    | [ADXL345BCCZ](https://octopart.com/search?q=ADXL345BCCZ) | Lcsc, Digi-Key | 1.69     | 1.69 |
@@ -34,6 +34,7 @@
 | 3 | Res 12k 1206 |  |  |  |  |
 | 3 | Res 33k 1206 |  |  |  |  |
 | 3 | Res 100k 1206 | | | | |
+| 6 | Res 100k 0.5W 2010 | | | | |
 | 4 | res 4.7k 1206 | | | | |
 | 0 | Res 1k 1206 | | | | |
 | 2 | Res 100R 1206 | | | | |
@@ -50,9 +51,10 @@
 | 1 | Schottky 60V 3A SMB | [B360B-13-F](https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_DIODES_B360B-13-F_B360B-13-F_C91546.html) | | | |
 | 1 | Inductor 15uH 2.2A 56mOhm | SLF10145T-150M2R2-PF |  |  |  |
 | 1 | Inductor 5.6uH 3.8A 22mOhm | [SLF10145T-5R6M3R2-PF](https://lcsc.com/product-detail/Power-Inductors_TDK_SLF10145T-5R6M3R2-PF_TDK-SLF10145T-5R6M3R2-PF_C136209.html) |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
+|  | Varistor 320V 400A | B72205S0251K101                                              |  |  |  |
+| | Varistor 30V | [B72214S0300K101](https://lcsc.com/product-detail/Others_EPCOS_B72214S0300K101_EPCOS-B72214S0300K101_C210626.html) | | | |
+|  | Fuse 2A Slow | [40012000000](https://lcsc.com/product-detail/Blade-Fuses_Littelfuse_40012000000_Littelfuse-40012000000_C178824.html) |  |  |  |
+|  | transistor NPN 60V                | [MMBTA06LT1G](https://lcsc.com/product-detail/Transistors-NPN-PNP_ON-Semicon_MMBTA06LT1G_ON-Semicon-ON-MMBTA06LT1G_C77760.html) |  |  |  |
+|  | Diodo 150mA SOD-323 | [1N4148WS](https://lcsc.com/product-detail/Switching-Diode_Changjiang-Electronics-Tech-CJ-1N4148WS_C2128.html) |  |  |  |
 |    |         | | |      |  |
 

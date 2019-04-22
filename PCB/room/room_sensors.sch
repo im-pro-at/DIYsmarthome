@@ -15396,7 +15396,6 @@ Source: http://www.onsemi.com/pub/Collateral/MBRS130LT3-D.PDF</description>
 <part name="U5" library="SN65HVD11DR_snapEDA" deviceset="SN65HVD11DR" device=""/>
 <part name="U6" library="SN65HVD11DR_snapEDA" deviceset="SN65HVD11DR" device=""/>
 <part name="U7" library="SN65HVD11DR_snapEDA" deviceset="SN65HVD11DR" device=""/>
-<part name="D6" library="diode" deviceset="MBRS130LT3" device="" value="B360B-13-F"/>
 </parts>
 <sheets>
 <sheet>
@@ -15773,7 +15772,6 @@ Source: http://www.onsemi.com/pub/Collateral/MBRS130LT3-D.PDF</description>
 <instance part="+3V42" gate="G$1" x="233.68" y="132.08" smashed="yes" rot="R270">
 <attribute name="VALUE" x="236.22" y="132.08" size="1.778" layer="96"/>
 </instance>
-<instance part="D6" gate="G$1" x="218.44" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -16079,19 +16077,13 @@ Source: http://www.onsemi.com/pub/Collateral/MBRS130LT3-D.PDF</description>
 <label x="215.9" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="CON1" gate="G$1" pin="2"/>
-<pinref part="D6" gate="G$1" pin="A"/>
-<wire x1="213.36" y1="134.62" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="134.62" x2="215.9" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="+24V" class="0">
 <segment>
-<pinref part="D6" gate="G$1" pin="C"/>
-<wire x1="220.98" y1="137.16" x2="229.616" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="137.16" x2="229.616" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+24V"/>
+<pinref part="CON1" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="134.62" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="134.62" x2="215.9" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
