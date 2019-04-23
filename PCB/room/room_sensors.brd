@@ -28,15 +28,15 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -2515,7 +2515,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="63.8048" y="23.6332" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="R3" library="rcl" package="R1206" value="12k" x="54.864" y="51.181" smashed="yes" rot="R180">
-<attribute name="NAME" x="56.134" y="53.594" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="55.88" y="49.784" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="C6" library="rcl" package="C0805" value="100nF 50V" x="40.64" y="53.34" smashed="yes">
 <attribute name="NAME" x="39.6875" y="54.61" size="1.27" layer="25"/>
@@ -2563,7 +2563,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="52.705" y="67.31" size="1.27" layer="25" rot="R270"/>
 </element>
 <element name="R7" library="rcl" package="R1206" value="100k" x="52.07" y="55.245" smashed="yes">
-<attribute name="NAME" x="54.2925" y="51.7525" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="56.0705" y="54.2925" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="R9" library="rcl" package="R1206" value="4k7" x="31.75" y="42.164" smashed="yes" rot="R180">
 <attribute name="NAME" x="34.798" y="42.037" size="1.27" layer="25"/>
@@ -2650,7 +2650,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="80.01" y="29.845" size="1.27" layer="25" rot="R270"/>
 </element>
 <element name="R19" library="rcl" package="R1206" value="120R" x="75.946" y="24.384" smashed="yes" rot="R270">
-<attribute name="NAME" x="77.089" y="23.749" size="1.27" layer="25"/>
+<attribute name="NAME" x="77.343" y="25.527" size="1.27" layer="25"/>
 </element>
 <element name="R20" library="rcl" package="R1206" value="1k" x="77.47" y="20.828" smashed="yes">
 <attribute name="NAME" x="80.518" y="22.225" size="1.27" layer="25" rot="R270"/>
@@ -2659,7 +2659,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="68.961" y="40.132" size="1.27" layer="25"/>
 </element>
 <element name="R22" library="rcl" package="R1206" value="120R" x="74.422" y="36.068" smashed="yes">
-<attribute name="NAME" x="75.057" y="37.465" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="76.073" y="42.037" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="R23" library="rcl" package="R1206" value="1k" x="77.978" y="37.592" smashed="yes" rot="R90">
 <attribute name="NAME" x="76.708" y="40.132" size="1.27" layer="25"/>
@@ -2668,16 +2668,16 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="58.674" y="40.894" size="1.27" layer="25"/>
 </element>
 <element name="R25" library="rcl" package="R1206" value="120R" x="63.5" y="36.068" smashed="yes">
-<attribute name="NAME" x="64.135" y="37.338" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="62.23" y="40.767" size="1.27" layer="25"/>
 </element>
 <element name="R26" library="rcl" package="R1206" value="1k" x="67.056" y="37.846" smashed="yes" rot="R90">
-<attribute name="NAME" x="65.786" y="36.576" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="69.342" y="36.576" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="R27" library="rcl" package="R1206" value="1k" x="49.53" y="37.592" smashed="yes" rot="R270">
 <attribute name="NAME" x="48.26" y="40.132" size="1.27" layer="25"/>
 </element>
 <element name="R28" library="rcl" package="R1206" value="120R" x="53.086" y="36.068" smashed="yes">
-<attribute name="NAME" x="53.721" y="37.465" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="54.483" y="42.037" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="R29" library="rcl" package="R1206" value="1k" x="56.642" y="37.592" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.547" y="41.402" size="1.27" layer="25" rot="R180"/>
@@ -2734,7 +2734,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="16.8275" y="42.8625" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="R30" library="rcl" package="R1206" value="4k7" x="19.304" y="42.164" smashed="yes" rot="R180">
-<attribute name="NAME" x="20.8915" y="44.704" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="20.6375" y="40.894" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="C31" library="rcl" package="C0805" value="4u7 16V" x="45.72" y="34.29" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.26" y="33.02" size="1.27" layer="25" rot="R90"/>
@@ -2819,7 +2819,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="PRICE" value="None" x="53.34" y="32.004" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" RS-485 Interface ICs 3.3V Differential Transceivers " x="53.34" y="32.004" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="53.34" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.44956875" y="29.80203125" size="2.08761875" layer="25" ratio="10" rot="SR0"/>
+<attribute name="NAME" x="52.46556875" y="31.32603125" size="1.27" layer="25" ratio="10" rot="SR0"/>
 </element>
 <element name="U5" library="SN65HVD11DR_snapEDA" package="SOIC127P600X175-8N" value="SN65HVD11DR" x="63.5" y="32.004" smashed="yes">
 <attribute name="PACKAGE" value="SOIC-8 Texas Instruments" x="63.5" y="32.004" size="1.778" layer="27" display="off"/>
@@ -2828,7 +2828,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="PRICE" value="None" x="63.5" y="32.004" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" RS-485 Interface ICs 3.3V Differential Transceivers " x="63.5" y="32.004" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="63.5" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="61.60956875" y="29.54803125" size="2.08761875" layer="25" ratio="10" rot="SR0"/>
+<attribute name="NAME" x="62.37156875" y="31.32603125" size="1.27" layer="25" ratio="10" rot="SR0"/>
 </element>
 <element name="U6" library="SN65HVD11DR_snapEDA" package="SOIC127P600X175-8N" value="SN65HVD11DR" x="73.66" y="32.004" smashed="yes">
 <attribute name="PACKAGE" value="SOIC-8 Texas Instruments" x="73.66" y="32.004" size="1.778" layer="27" display="off"/>
@@ -2837,7 +2837,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="PRICE" value="None" x="73.66" y="32.004" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" RS-485 Interface ICs 3.3V Differential Transceivers " x="73.66" y="32.004" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="73.66" y="32.004" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="71.76956875" y="29.80203125" size="2.08761875" layer="25" ratio="10" rot="SR0"/>
+<attribute name="NAME" x="72.53156875" y="31.32603125" size="1.27" layer="25" ratio="10" rot="SR0"/>
 </element>
 <element name="U7" library="SN65HVD11DR_snapEDA" package="SOIC127P600X175-8N" value="SN65HVD11DR" x="71.882" y="24.13" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SOIC-8 Texas Instruments" x="71.882" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2846,7 +2846,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="PRICE" value="None" x="71.882" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value=" RS-485 Interface ICs 3.3V Differential Transceivers " x="71.882" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="71.882" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="69.68003125" y="25.76643125" size="2.08761875" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="70.95003125" y="25.25843125" size="1.27" layer="25" ratio="10" rot="SR270"/>
 </element>
 </elements>
 <signals>
